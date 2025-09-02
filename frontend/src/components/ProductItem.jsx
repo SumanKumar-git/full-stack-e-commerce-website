@@ -18,12 +18,12 @@ const ProductItem = ({id,image,name,price,brand}) => {
                 {/* Info div */}
                 <div className='border-t-[1.7px] border-gray-200 p-2'>
                     <div>
-                        <p className='text-md font-semibold'>{brand}</p>
-                        <p className='text-sm whitespace-nowrap'>{name}</p>
+                        <p className='text-sm sm:text-md truncate font-semibold'>{brand}</p>
+                        <p className='text-xs pb-1 sm:text-sm truncate whitespace-nowrap'>{name}</p>
                     </div>
                     <div className='flex justify-between'>
-                        <p className='text-md font-semibold pt-2'>{currency} {price}</p>
-                        <div className='bg-black p-2 rounded-[12px]'>
+                        <p className='text-md font-semibold pt-0.5'>{currency} {price}</p>
+                        <div className='bg-black p-1 sm:p-2 rounded-[8px] sm:rounded-[12px]'>
                             <CiShoppingCart className='text-white text-2xl' />
                         </div>
                     </div>

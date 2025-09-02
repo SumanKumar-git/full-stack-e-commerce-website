@@ -7,7 +7,7 @@ const NewsLetterBox = () => {
     }
 
     return (
-        <div className='bg-black  rounded-2xl flex flex-col sm:flex-row p-4 px-12 justify-between gap-5 sm:gap-0'>
+        <div className='bg-black  rounded-2xl flex flex-col sm:flex-row py-4 px-6 sm:px-14 justify-between gap-5 sm:gap-0'>
             {/* Left */}
             <div className='flex items-center sm:w-1/2'>
                 <h1 className='text-white font-black text-3xl sm:text-4xl'>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
