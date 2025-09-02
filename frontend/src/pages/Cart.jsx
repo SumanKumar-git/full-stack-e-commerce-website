@@ -67,7 +67,7 @@ const Cart = () => {
         }  )) : (<div className='flex flex-col justify-center items-center py-24'>
             <BsFillHandbagFill className='text-8xl text-gray-200 mb-7' />
             <p className='text-gray-400 text-sm font-medium'>Hey, it feels so light!</p>
-            <p className='text-sm font-semibold text-gray-700'>There is nothing in your bag. Let's add some items.</p>
+            <p className='text-xs sm:text-sm text-center pt-2 font-semibold text-gray-700'>There is nothing in your bag. Let's add some items.</p>
         </div>)
                 }
               </div>

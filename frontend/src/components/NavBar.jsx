@@ -55,14 +55,14 @@ const NavBar = () => {
         </Link >
         <CiMenuFries onClick={() => setVisible(true)} className="text-3xl font-bold cursor-pointer sm:hidden" />
       </div>
-      <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
+      <div className={`fixed top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
         <div className="flex flex-col text-gray-600">
           <div onClick={() => setVisible(false)} className="flex item-center gap-4 p-3 cursor-pointer">
             <IoIosArrowForward className="text-2xl font-bold cursor-pointer rotate-180"/>
             <p>Back</p>
           </div>
           <NavLink onClick={() => setVisible(false)} className='py-2 pl-6 border' to='/'>HOME</NavLink>
-          <NavLink onClick={() => setVisible(false)} className='py-2 pl-6 border' to='/colllections'>COLLECTION</NavLink>
+          <NavLink onClick={() => setVisible(false)} className='py-2 pl-6 border' to='/collections'>COLLECTION</NavLink>
           <NavLink onClick={() => setVisible(false)} className='py-2 pl-6 border' to='/about'>ABOUT</NavLink>
           <NavLink onClick={() => setVisible(false)} className='py-2 pl-6 border' to='/contact'>CONTACT</NavLink>
         </div>
