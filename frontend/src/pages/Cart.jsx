@@ -72,7 +72,7 @@ const Cart = () => {
                 }
               </div>
        {/* Cart Summary */}
-      <CartSummary />
+      <CartSummary cartData= {cartData} />
       </div>
       <NewsLetterBox />
     </div>

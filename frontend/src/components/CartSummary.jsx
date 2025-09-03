@@ -3,7 +3,7 @@ import { ShopContext } from "../context/ShopContext"
 import { FaArrowRight } from "react-icons/fa6";
 
 
-const CartSummary = () => {
+const CartSummary = ({cartData}) => {
 
     const {currency,platform_fee,delivery_fee,getCartAmount, navigate} = useContext(ShopContext);
 
@@ -28,7 +28,7 @@ const CartSummary = () => {
                     <p className='text-2xl font-semibold'>{currency} {getCartAmount() === 0 ?  0: getCartAmount() + delivery_fee + platform_fee }</p>
                 </div>
             </div>
-                <button onClick = {() => navigate('/place-order')} className='flex items-center justify-center font-medium py-4 gap-4 bg-black text-white w-full rounded-full cursor-pointer hover:bg-white border-2 hover:text-black transition-all ease-in-out '>Go to Checkout <FaArrowRight className='text-xl' /> </button>
+                <button onClick = {() => cartData.length > 0 ? navigate('/place-order') : null} className='flex items-center justify-center font-medium py-4 gap-4 bg-black text-white w-full rounded-full cursor-pointer hover:bg-white border-2 hover:text-black transition-all ease-in-out '>Go to Checkout <FaArrowRight className='text-xl' /> </button>
             </div>
     )
 }
